@@ -1,0 +1,6 @@
+use_frameworks!
+target 'CTLProtocolBuffers_Tests' do
+  pod 'CTLProtocolBuffers', :path => '../'
+  
+  
+end
