@@ -17,26 +17,27 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = "Everything about this project under our ownership, giong cai sumary no chui"
 
-  s.homepage         = 'https://github.com/linhct.dev@gmail.com/CTLProtocolBuffers'
+  s.homepage         = 'https://github.com/CanThaiLinh/CTLProtocolBuffer'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'linhct.dev@gmail.com' => 'sonleminh@tcom.net.vn' }
-  s.source           = { :git => 'https://github.com/linhct.dev@gmail.com/CTLProtocolBuffers.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'linhct.dev@gmail.com' => 'linhct.dev@gmail.com' }
+ s.source           = { :http => "https://github.com/CanThaiLinh/CTLProtocolBuffer/releases/download/0.1.0/CTLProtocolBuffers-0.1.0.zip" }
 
-  s.ios.deployment_target = '8.0'
 
-  s.source_files = 'CTLProtocolBuffers/Classes/**/*'
+  # s.ios.deployment_target = '8.0'
+  s.source_files = 'CTLProtocolBuffer/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'CTLProtocolBuffers' => ['CTLProtocolBuffers/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks          = ["SystemConfiguration", "QuartzCore"]
+  s.library             = "z", "System", "xml2", "xml2.2", "c++"
+  s.requires_arc        = true
+  
+  s.platform            = :ios, '9.0'
+  s.preserve_paths      = 'CTLProtocolBuffer.framework'
+  s.public_header_files = 'CTLProtocolBuffer.framework/Versions/A/Headers/GPBProtocolBuffers.h'
+  s.source_files        = 'CTLProtocolBuffer.framework/Versions/A/Headers/GPBProtocolBuffers.h'
+  s.resource            = 'CTLProtocolBuffer.bundle'
+  s.vendored_frameworks = 'CTLProtocolBuffer.framework'
+  # s.vendored_library    = 'libstdc++.6.0.9.dylib', 'libstdc++.6.dylib'
 end

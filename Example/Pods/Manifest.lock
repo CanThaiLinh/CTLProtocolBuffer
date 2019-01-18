@@ -1,0 +1,16 @@
+PODS:
+  - CTLProtocolBuffers (0.1.0)
+
+DEPENDENCIES:
+  - CTLProtocolBuffers (from `../`)
+
+EXTERNAL SOURCES:
+  CTLProtocolBuffers:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CTLProtocolBuffers: a7b546dbdb286f60c0f1a682b2a18bf2f9d70e60
+
+PODFILE CHECKSUM: 23a479f38d728ad3a630f8fe75848c208d1c559f
+
+COCOAPODS: 1.6.0.beta.2

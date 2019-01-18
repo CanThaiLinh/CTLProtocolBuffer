@@ -22,7 +22,7 @@ pod 'CTLProtocolBuffers'
 
 ## Author
 
-linhct.dev@gmail.com, sonleminh@tcom.net.vn
+linhct.dev@gmail.com, linh.ct 
 
 ## License
 
