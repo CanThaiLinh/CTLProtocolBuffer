@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CTLProtocolBuffers'
-  s.version          = '0.1.0'
+  s.version          = '0.1.4'
   s.summary          = 'A short description of CTLProtocolBuffers.'
 
 # This description is used to generate tags and improve search results.
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'linhct.dev@gmail.com' => 'linhct.dev@gmail.com' }
- s.source           = { :http => "https://github.com/CanThaiLinh/CTLProtocolBuffer/releases/download/0.1.0/CTLProtocolBuffers-0.1.0.zip" }
+ s.source           = { :http => "https://github.com/CanThaiLinh/CTLProtocolBuffer/releases/download/0.1.4/CTLProtocolBuffers_0.1.4.zip" }
 
 
   # s.ios.deployment_target = '8.0'
@@ -33,11 +33,11 @@ Pod::Spec.new do |s|
   s.library             = "z", "System", "xml2", "xml2.2", "c++"
   s.requires_arc        = true
   
-  s.platform            = :ios, '9.0'
-  s.preserve_paths      = 'CTLProtocolBuffer.framework'
-  s.public_header_files = 'CTLProtocolBuffer.framework/Versions/A/Headers/GPBProtocolBuffers.h'
-  s.source_files        = 'CTLProtocolBuffer.framework/Versions/A/Headers/GPBProtocolBuffers.h'
-  s.resource            = 'CTLProtocolBuffer.bundle'
-  s.vendored_frameworks = 'CTLProtocolBuffer.framework'
+  s.platform            = :ios, '8.0'
+  s.preserve_paths      = 'ProtocolBuffers.framework'
+  s.public_header_files = 'ProtocolBuffers.framework/Versions/A/Headers/GPBProtocolBuffers.h'
+  s.source_files        = 'ProtocolBuffers.framework/Versions/A/Headers/GPBProtocolBuffers.h'
+  # s.resource            = 'ProtocolBuffers.bundle'
+  s.vendored_frameworks = 'ProtocolBuffers.framework'
   # s.vendored_library    = 'libstdc++.6.0.9.dylib', 'libstdc++.6.dylib'
 end
